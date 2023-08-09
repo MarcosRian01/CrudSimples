@@ -1,0 +1,1 @@
+export const API_PATH = new URL('http://localhost:8080/');

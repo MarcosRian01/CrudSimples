@@ -1,0 +1,26 @@
+<div id="container">
+    <div class="box">
+        <form (submit)="submitForm()">
+            <div class="inputBox">
+                <span class="spanText">Nome do produto</span>
+                <input type="text" [(ngModel)]="productName" name="productName" placeholder="Nome do Produto" class="inputText">
+            </div>
+
+            <div class="inputBox">
+                <span class="spanText">Valor</span>
+                <input type="number" [(ngModel)]="productValue" name="productValue" placeholder="Preço do Produto" class="inputText">
+            </div>
+
+            <div class="container d-flex align-items-center justify-content-center">
+                <button id="botao" class="btn btn-outline-light" type="submit">Adicionar Produto</button>
+            </div>
+        </form>
+    </div>
+
+    <p id="textPage" class="text-decoration-underline">
+        <a routerLink="/product">
+            Visualizar todos os produtos
+        </a>
+    </p>
+</div>
+<router-outlet></router-outlet>
