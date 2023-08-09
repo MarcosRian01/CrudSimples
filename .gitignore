@@ -24,4 +24,4 @@ hs_err_pid*
 replay_pid*
 
 # Configurações de arquivos
-BackEnd/src/main/resources/application
+BackEnd/src/main/resources/application.properties
