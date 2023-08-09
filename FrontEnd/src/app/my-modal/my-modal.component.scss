@@ -1,0 +1,29 @@
+#modalPrincipal {
+    // background: linear-gradient( to bottom, #6c757d, #495057 );
+    background: #6c757d;
+    border-radius: 7px;
+    border: none; /* Remover a borda */
+    box-shadow: 2px 2px 10px black; /* Remover a sombra */
+}
+#modalPrincipal .btn-close:focus { /* Remover a borda ao focar */
+    box-shadow: none !important;
+}
+.modal-header{
+    background-color: #495057;
+}
+p, h5, label{
+    font: small-caps 16px/30px sans-serif;
+    color: white;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+h4 {
+    font: small-caps bold 20px/30px sans-serif;
+    color: white;
+}
+#botao{
+    padding: 10px;
+    font-weight: bold;
+    margin-top: 30px;
+    font: small-caps bold 16px/30px sans-serif;
+}

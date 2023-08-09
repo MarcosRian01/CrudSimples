@@ -45,7 +45,6 @@ public class ProductController {
     }
 	
 	
-	
 	@GetMapping("/products/{id}")
 	public ResponseEntity<Object> getOneProduct(@PathVariable(value="id") UUID id) {
         return productService.getOneProduct(id);

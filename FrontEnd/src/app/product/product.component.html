@@ -1,22 +1,22 @@
 <div id="container">
     <table id="tabela">
         <thead>
-        <tr>
+        <tr id="linhaTable">
             <th scope="col">Nome do Produto</th>
             <th scope="col">Preço do Produto</th>
-            <th></th>
+            <th ></th>
         </tr>
         </thead>
         <tbody>
-        <tr *ngFor="let product of products">
+        <tr *ngFor="let product of products" id="columnTable">
             <td>{{ product.name }}</td>
             <td>{{ product.value }}</td>
             <td>
-                <button type="button" (click)="obterProduto(product.idProduct, modalContent)" class="btn btn-outline-light">
-                        Editar
+                <button type="button" (click)="obterProduto(product.idProduct)" class="btn btn-outline-light">
+                    Editar
                 </button>
 
-                <button type="button" class="btn btn-danger">
+                <button type="button" (click)="excluirProduto(product.idProduct)" class="btn btn-danger">
                     Deletar
                 </button>
             </td>
@@ -26,11 +26,3 @@
 
 </div>
 
-<ng-template #modalContent let-modal>
-    <div class="modal-body">
-        <div class="box">
-            <p>Nome: {{ produtoObtido.name }}</p>
-            <p>Valor: {{ produtoObtido.value }}</p>
-        </div>
-    </div>
-</ng-template>

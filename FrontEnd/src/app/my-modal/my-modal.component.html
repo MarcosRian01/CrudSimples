@@ -1,0 +1,24 @@
+<div id="modalPrincipal">
+    <div class="modal-header">
+        <h4 class="modal-title">Detalhes do Produto</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" (click)="closeModal()">
+        </button>
+    </div>
+    <div class="modal-body">
+        <form (ngSubmit)="atualizarProduto()">
+            <h5>{{ produto.nome }}</h5>
+            <p>{{ produto.descricao }}</p>
+            
+            <label for="nome">Nome do produto:</label>
+            <input type="text" id="nome" [(ngModel)]="produto.name" name="nome" class="form-control">
+            
+            <label for="valor">Valor:</label>
+            <input type="number" id="valor" [(ngModel)]="produto.value" name="valor" class="form-control">
+            
+            <!-- Outras informações editáveis do produto aqui -->
+            <div class="container d-flex align-items-center justify-content-center">
+                <button type="submit" id="botao" class="btn btn-outline-light" (click)="recarregarPagina()">Salvar Alterações</button>
+            </div>
+        </form>
+    </div>
+</div>

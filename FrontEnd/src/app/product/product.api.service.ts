@@ -14,7 +14,11 @@ export class ProductService {
         return this.http.get<IProduct[]>(`${API_PATH}products`)
     }
 
-    obterSomenteUm(idProduct: number){
+    obterSomenteUm(idProduct: string){
         return this.http.get<IProduct>(`${API_PATH}products/${idProduct}`)
+    }
+
+    excluirProduto(idProduct: string){
+        return this.http.delete<IProduct>(`${API_PATH}products/${idProduct}`)
     }
 }

@@ -23,8 +23,16 @@ th{
     color: white;
 }
 
+#linhaTable{
+    border-bottom: 1px solid white;
+}
+
+#columnTable{
+    padding: 20px;
+}
+
 td{
-    padding: 5px;
+    padding-top: 10px;
     padding-bottom: 25px;
     padding-left: 9%;
     font: small-caps 15px/30px sans-serif;
@@ -37,10 +45,10 @@ button {
 .modal-body{
     background-color: black;
 }
-.box {
-    width: 400px;
-    height: 350px;
-    border-radius: 15px;
-    box-shadow: 2px 2px 10px black;
-    padding: 5px;
-}
+// .box {
+//     width: 400px;
+//     height: 350px;
+//     border-radius: 15px;
+//     box-shadow: 2px 2px 10px black;
+//     padding: 5px;
+// }

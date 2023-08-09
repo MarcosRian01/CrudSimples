@@ -8,12 +8,14 @@ import { ProductComponent } from './product/product.component';
 import { HttpClientModule } from '@angular/common/http';
 import { AdicionarProdutoComponent } from './index/index.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { MyModalComponent } from './my-modal/my-modal.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProductComponent,
-    AdicionarProdutoComponent
+    AdicionarProdutoComponent,
+    MyModalComponent
   ],
   imports: [
     BrowserModule,
