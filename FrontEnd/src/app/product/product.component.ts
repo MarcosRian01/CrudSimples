@@ -35,13 +35,14 @@ export class ProductComponent implements OnInit {
     if (confirm('Tem certeza de que deseja excluir este produto?')) {
       this.productService.excluirProduto(idProduct).subscribe(
         (data: any) => {
-          location.reload();
         },
         (error) => {
           console.error('Erro ao excluir produto:', error);
         }
       );
     }
+
+    location.reload();
   }
 
   abrirModal(produto: any){

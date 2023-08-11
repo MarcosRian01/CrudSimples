@@ -10,7 +10,7 @@ import { IProduct } from '../product/product.interface';
 export class ProductService {
   constructor(private http: HttpClient) {}
 
-  atualizarProduto(produto: IProduct): Observable<any> {
+  atualizarProduto(produto: IProduct) {
     return this.http.put<IProduct>(`${API_PATH}products/${produto.idProduct}`, produto);
   }
   
